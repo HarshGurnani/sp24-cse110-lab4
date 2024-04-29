@@ -1,0 +1,2 @@
+1. The bug was that `num1` and `num2` get passed in as strings, so when calculating `result`, the addition of the two inputs results in string concatenation and not integer addition. Therefore, `result` just becomes a string of the form "num1num2".
+2. I would fix this bug by typecasting the strings `num1` and `num2` to integers before adding them up, using the unary + operator. Then, I would check if either of them is NaN before adding them up. The code fix is shown in `expand/screenshots`.
